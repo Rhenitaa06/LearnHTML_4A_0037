@@ -3,48 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
     <title>Belajar Html</title>
 </head>
 
 <body>
     <header> 
-        <h1> Belajar dasar html</h1>
-
-        <div>
-            <ul>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Skill">Skill</a></li>
-                <li><a href="#Project">Project</a></li>
-                <li><a href="#Contact">Contact</a></li>
-            </ul>
-        </div>
+        <h1>Welcome<span class="accent">.</h1>
+        <nav>
+                <a href="#About" class="aktif">About</a>
+                <a href="#Skill">Skill</a>
+                <a href="#Project">Project</a>
+                <a href="#Contact">Contact</a>
+        </nav>
     </header>
 
     <main>
 
         <section id="About">
-        <h2>About Me</h2>
-        <p>Saya adalah seorang UI/UX di UISI.</p>
 
-        <img src="uisi.jpg" width="355px" height="200px">
+        <div class="hero-kiri">
+            <h2>About Me</h2>
+            <p>Hello! Saya Rhenita Theresia Grace Bancin. Saya adalah seorang UI/UX designer di UISI.</p>
+        </div>
+        
+        <div class="hero-kanan">
+            <img src="profil rhenita.jpg" width="355px" height="200px">
+        </div>
 
         </section>
 
-        <section id="Skill">
-            <h2>My Skill</h2>
+        <section id="Education">
+            <span class="section-label">Education</span>
+            <h2>My Education</h2>
+            <p class="section-desc">
+            A collection of learning journeys and academic experiences. 
+            </p>
 
-            <article>
-                <h4>Html</h4>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/960px-HTML5_logo_and_wordmark.svg.png?_=20170517184425" width="250px" height="250px">
-            </article>
-            <article>
-                <h4>CSS</h4>
-                <img src="https://w7.pngwing.com/pngs/224/77/png-transparent-website-web-internet-css-style-css3-technology-social-media-logos-i-flat-colorful-icon.png" width="250px" height="250px">
-            </article>
-            <article>
-                <h4>JavaScript</h4>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRss-86vRuxOArrVRmMgerLZ5pi8yCs6U7zsQ&s" width="350px" height="250px">
-            </article>
+            <ul>
+                <li>
+                <img src="https://thfvnext.bing.com/th/id/OIP.bNPqHEzw5KwiIOTmM6bMNAHaDw?w=323&h=177&c=7&r=0&o=7&cb=thfvnext&dpr=1.5&pid=1.7&rm=3">
+                <p> St. Ignatius Medan Senior High School</p>
+                </li>
+
+                <li>
+                <img src="https://thfvnext.bing.com/th/id/OIP.xYpNSecY5snkV8guo5treQHaDq?w=350&h=173&c=7&r=0&o=7&cb=thfvnext&dpr=1.5&pid=1.7&rm=3" width="250px" height="250px">
+                <p>University of Indonesia, Computer Science Bachelor</p>
+                </li>
+            
+                <li>
+                <img src="https://www.bing.com/th/id/OIP.GHNLZtQxsltIgtHrMArSVQHaEo?w=279&h=180&c=7&r=0&o=7&cb=thfvnext&dpr=1.5&pid=1.7&rm=3" width="350px" height="250px">
+                <p>Oxford University, computer master</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="Job">
+            <span class="section-label">Experience</span>
+            <h2>My Work Experience</h2>
+            <p class="section-desc">
+            A selection of professional experiences I've been involved in.
+            </p>
+
+            <div class="image-container">
+
+                <div class="card">
+                    <img src="https://customerthink.com/wp-content/uploads/Pixlogix-Logo.jpg" alt="Pixlogix">
+                    <p>UI/UX Designer at Pixlogix Company</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.MzRgAF1VGMTBZUHCb6icRgHaHa?cb=thfvnext&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Monocubed">
+                    <p>Web Developer at Monocubed</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="Skill">
+            <span class="section-label">Expertise</span>
+            <h2>My Skills</h2>
+            <p class="section-desc">A summary of my skills and areas of expertise.</p>
+
+
+        <ul>
+            <li>
+                <img
+                 src="html.png"
+                 alt="html" />
+                 <p>HTML</p>
+            </li>
+
+            <li>
+                <img 
+                src="css.png"
+                alt="css"/>
+                <p>CSS</p>
+            </li>
+            
+            <li>
+                <img 
+                src="js.png"
+                alt="js" />
+                <p>JavaScript</p>
+            </li>
+        </ul>
         </section>
 
         <section id="Project">
